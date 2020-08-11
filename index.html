@@ -1,0 +1,287 @@
+<!Doctype html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='./style.css'>
+    </head>
+    <body>
+        <nav class='link-holder'>
+            <h2 class='link' id='nav-link1'> Areas y Volumen </h2>
+
+            <h2 class='link' id='nav-link2'> Trigonometria </h2>
+
+            <h2 class='link' id='nav-link3'> Transformacion de Valores </h2>
+        </nav>
+        
+        <div id='all'>
+            <h1 class='lightblue'> Calculadora </h1>
+
+            <!-- Areas y Volumen -->
+
+            <div class='operation-type' id='operation-type1'>
+                <div class='link-holder margin-right'>
+                    <h2 class='link' id='2d'> Figuras 2D</h2>
+
+                    <h2 class='link' id=3d> Figuras 3D </h2>
+                </div>
+
+                <div class='sub-operation-type none' id='sub-operation-type1'>
+                    <div class='figure' id='square'>
+                        <h3 class='lightblue'> Cuadrado </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Lado: </h4>
+                                <input class='square-input' id='square-side' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <input class='square-input' id='square-diagonal' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='square-input' id='square-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='square-input' id='square-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Lado: </h4>
+                                <h4 id='square-side-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <h4 id='square-diagonal-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='square-area-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='rectangle'>
+                        <h3 class='lightblue'> Rectangulo </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Base: </h4>
+                                <input class='rectangle-input' id='rectangle-base' type="number" min='1'>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <input class='rectangle-input' id='rectangle-height' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <input class='rectangle-input' id='rectangle-diagonal' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='rectangle-input' id='rectangle-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='rectangle-input' id='rectangle-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Base: </h4>
+                                <h4 id='rectangle-base-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <h4 id='rectangle-height-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <h4 id='rectangle-diagonal-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='rectangle-area-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='triangle'>
+                        <h3 class='lightblue'> Triangulo </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Base: </h4>
+                                <input class='triangle-input' id='triangle-base' type="number" min='1'>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <input class='triangle-input' id='triangle-height' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='triangle-input' id='triangle-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='triangle-input' id='triangle-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Base: </h4>
+                                <h4 id='triangle-base-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <h4 id='triangle-height-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='triangle-area-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='paralel'>
+                        <h3 class='lightblue'> Paralelogramo </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Base: </h4>
+                                <input class='paralel-input' id='paralel-base' type="number" min='1'>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <input class='paralel-input' id='paralel-height' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='paralel-input' id='paralel-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='paralel-input' id='paralel-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Base: </h4>
+                                <h4 id='paralel-base-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <h4 id='paralel-height-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='paralel-area-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='trap'>
+                        <h3 class='lightblue'> Trapecio </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Base: </h4>
+                                <input class='trap-input' id='trap-base' type="number" min='1'>
+
+                                <h4 class='lightblue'> Base 2: </h4>
+                                <input class='trap-input' id='trap-base2' type="number" min='1'>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <input class='trap-input' id='trap-height' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='trap-input' id='trap-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='trap-input' id='trap-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Base: </h4>
+                                <h4 id='trap-base-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Base 2: </h4>
+                                <h4 id='trap-base2-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <h4 id='trap-height-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='trap-area-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='circle'>
+                        <h3 class='lightblue'> Circulo </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Radio: </h4>
+                                <input class='circle-input' id='circle-radius' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diametro: </h4>
+                                <input class='circle-input' id='circle-diameter' type="number" min='1'>
+
+                                <h4 class='lightblue'> Circunfrencia: </h4>
+                                <input class='circle-input' id='circle-circum' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='circle-input' id='circle-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='circle-input' id='circle-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Radio: </h4>
+                                <h4 id='circle-radius-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diametro: </h4>
+                                <h4 id='circle-diameter-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Circunfrencia: </h4>
+                                <h4 id='circle-circum-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='circle-area-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+
+                <div class='sub-operation-type none' id='sub-operation-type2'>
+                    <div class='figure' id='cube'>
+                        <h3 class='lightblue'> Cubo </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Lado: </h4>
+                                <input class='cube-input' id='cube-side' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <input class='cube-input' id='cube-diagonal' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='cube-input' id='cube-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <input class='cube-input' id='cube-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='cube-input' id='cube-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Lado: </h4>
+                                <h4 id='cube-side-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <h4 id='cube-diagonal-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='cube-area-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <h4 id='cube-area-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trigonometria -->
+
+            <div class='operation-type none' id='operation-type2'>
+            </div>
+
+            <!-- Transformacion de Valores -->
+
+            <div class='operation-type none' id='operation-type3'>
+            </div>
+        </div>
+        <script src='./javascript/index.js'></script>
+
+        <script src='./javascript/2d/square.js'> </script>
+        <script src='./javascript/2d/rectangle.js'> </script>
+        <script src='./javascript/2d/triangle.js'> </script>
+        <script src='./javascript/2d/paralel.js'> </script>
+        <script src='./javascript/2d/trap.js'> </script>
+        <script src='./javascript/2d/circle.js'> </script>
+
+        <script src='./javascript/3d/cube.js'> </script>
+    </body>
+</html>

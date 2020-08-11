@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url('./fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('./fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Recursive";
+    src: url('./fonts/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: 'Recursive';
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+}
+
+#all {
+    margin: 3rem;
+}
+
+input {
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    width: 20rem;
+    padding: 0.5rem;
+}
+
+h1, h2 {
+    font-family: 'Open Sans';
+}
+
+.link-holder {
+    display: flex;
+    background-color: hsl(0, 0%, 20%);
+    margin: 0;
+}
+
+.margin-right {
+    margin-right: 2.5%;
+}
+
+.link {
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0;
+    cursor: pointer;
+    padding: 1.5rem 0 1.5rem 0;
+    color: hsl(205, 70%, 70%);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.link:hover {
+    background-color: hsl(205, 70%, 70%);
+    color: hsl(0, 0%, 20%);
+}
+
+.lightblue {
+    color: hsl(205, 70%, 70%);
+}
+
+.sub-operation-type {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 1rem 0;
+}
+
+.figure {
+    width: 29.5%;
+    min-height: 10rem;
+    margin: 1.5% 1.5% 1.5% 0;
+    padding: 1%;
+    background-color: hsl(0, 0%, 20%);
+    cursor: pointer;
+    transition: background-color 0.2s, border-radius 0.2s;
+}
+
+.clicked-figure {
+    width: 95.5%;
+    min-height: 15rem;
+    background-color: hsl(0, 0%, 25%);
+    cursor: auto;
+}
+
+.figure:hover {
+    background-color: hsl(0, 0%, 25%);
+    border-radius: 3px;
+}
+
+.figure-operations {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+.figure-operations div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.figure-operations-result h4 {
+    width: 20rem;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: hsl(0, 0%, 20%); 
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: hsl(205, 70%, 70%);
+    border-radius: 5px;
+}
+/* ////////// */
