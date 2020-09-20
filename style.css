@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: "Open Sans";
     src: url('./fonts/Open_Sans/OpenSans-Regular.ttf');
@@ -12,6 +13,7 @@
     font-family: "Recursive";
     src: url('./fonts/Recursive/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf');
 }
+/* ////// */
 
 body {
     margin: 0;
@@ -126,7 +128,19 @@ h1, h2 {
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: hsl(205, 70%, 70%);
+    background: hsl(205, 65%, 70%);
     border-radius: 5px;
 }
 /* ////////// */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

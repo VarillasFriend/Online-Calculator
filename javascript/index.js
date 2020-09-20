@@ -17,14 +17,14 @@ navLink1.onclick = () => {
     operationType2.classList.add('none')
     operationType3.classList.add('none')
 
-    operationType1.classList.remove('none')
+    operationType1.classList.toggle('none')
 }
 
 navLink2.onclick = () => {
     operationType1.classList.add('none')
     operationType3.classList.add('none')
 
-    operationType2.classList.remove('none')
+    operationType2.classList.toggle('none')
 }
 
 navLink3.onclick = () => {
@@ -35,14 +35,14 @@ navLink3.onclick = () => {
 }
 
 d2.onclick = () => {
-    subOperationType1.classList.remove('none')
+    subOperationType1.classList.toggle('none')
 
     subOperationType2.classList.add('none')
 }
 
 d3.onclick = () => {
-    subOperationType2.classList.remove('none')
-
+    subOperationType2.classList.toggle('none')
+    
     subOperationType1.classList.add('none')
 }
 
@@ -54,7 +54,7 @@ figures.forEach(figure => {
             clickedFigure.classList.remove('clicked-figure')
         }
 
-        figure.children[1].classList.remove('none')
-        figure.classList.add('clicked-figure')
+        figure.children[1].classList.toggle('none')
+        figure.classList.toggle('clicked-figure')
     }
 })

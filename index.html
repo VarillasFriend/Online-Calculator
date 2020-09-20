@@ -1,6 +1,10 @@
 <!Doctype html>
-<html>
+<html lang='es'>
     <head>
+        <title> Calculadora Online </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Calculadora logica online">   
+
         <link rel='stylesheet' type='text/css' href='./style.css'>
     </head>
     <body>
@@ -17,7 +21,7 @@
 
             <!-- Areas y Volumen -->
 
-            <div class='operation-type' id='operation-type1'>
+            <div class='operation-type none' id='operation-type1'>
                 <div class='link-holder margin-right'>
                     <h2 class='link' id='2d'> Figuras 2D</h2>
 
@@ -198,7 +202,7 @@
                                 <h4 class='lightblue'> Diametro: </h4>
                                 <input class='circle-input' id='circle-diameter' type="number" min='1'>
 
-                                <h4 class='lightblue'> Circunfrencia: </h4>
+                                <h4 class='lightblue'> Circunferencia: </h4>
                                 <input class='circle-input' id='circle-circum' type="number" min='1'>
 
                                 <h4 class='lightblue'> Area: </h4>
@@ -214,7 +218,7 @@
                                 <h4 class='lightblue'> Diametro: </h4>
                                 <h4 id='circle-diameter-result'> 0 </h4>
 
-                                <h4 class='lightblue'> Circunfrencia: </h4>
+                                <h4 class='lightblue'> Circunferencia: </h4>
                                 <h4 id='circle-circum-result'> 0 </h4>
 
                                 <h4 class='lightblue'> Area: </h4>
@@ -240,7 +244,7 @@
                                 <input class='cube-input' id='cube-area' type="number" min='1'>
 
                                 <h4 class='lightblue'> Volumen: </h4>
-                                <input class='cube-input' id='cube-area' type="number" min='1'>
+                                <input class='cube-input' id='cube-volume' type="number" min='1'>
 
                                 <h4 class='lightblue'> Redondear a: </h4>
                                 <input class='cube-input' id='cube-round' type="number" min='1'>
@@ -256,7 +260,103 @@
                                 <h4 id='cube-area-result'> 0 </h4>
 
                                 <h4 class='lightblue'> Volumen: </h4>
-                                <h4 id='cube-area-result'> 0 </h4>
+                                <h4 id='cube-volume-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='parallelepiped'>
+                        <h3 class='lightblue'> Paralelepipedo </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Base: </h4>
+                                <input class='parallelepiped-input' id='parallelepiped-base' type="number" min='1'>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <input class='parallelepiped-input' id='parallelepiped-height' type="number" min='1'>
+
+                                <h4 class='lightblue'> Profundidad: </h4>
+                                <input class='parallelepiped-input' id='parallelepiped-depth' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <input class='parallelepiped-input' id='parallelepiped-diagonal' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='parallelepiped-input' id='parallelepiped-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <input class='parallelepiped-input' id='parallelepiped-volume' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='parallelepiped-input' id='parallelepiped-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Base: </h4>
+                                <h4 id='parallelepiped-base-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <h4 id='parallelepiped-height-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Profundidad: </h4>
+                                <h4 id='parallelepiped-depth-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <h4 id='parallelepiped-diagonal-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='parallelepiped-area-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <h4 id='parallelepiped-volume-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='pyramid'>
+                        <h3 class='lightblue'> Piramide </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Base: </h4>
+                                <input class='pyramid-input' id='pyramid-base' type="number" min='1'>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <input class='pyramid-input' id='pyramid-height' type="number" min='1'>
+
+                                <h4 class='lightblue'> Profundidad: </h4>
+                                <input class='pyramid-input' id='pyramid-depth' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <input class='pyramid-input' id='pyramid-diagonal' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='pyramid-input' id='pyramid-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <input class='pyramid-input' id='pyramid-volume' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='pyramid-input' id='pyramid-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Base: </h4>
+                                <h4 id='parallelepiped-base-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <h4 id='parallelepiped-height-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Profundidad: </h4>
+                                <h4 id='parallelepiped-depth-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diagonal: </h4>
+                                <h4 id='parallelepiped-diagonal-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='parallelepiped-area-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <h4 id='parallelepiped-volume-result'> 0 </h4>
                             </div>
                         </div>
                     </div>
@@ -266,11 +366,46 @@
             <!-- Trigonometria -->
 
             <div class='operation-type none' id='operation-type2'>
+                <div class='figure clicked-figure'>
+                    <h3 class='lightblue'> Trigonometria </h3>
+                    <div class="figure-operations">
+                        <div>
+                            <h4 class='lightblue'> Lado: </h4>
+                            <input class='cube-input' id='cube-side' type="number" min='1'>
+
+                            <h4 class='lightblue'> Diagonal: </h4>
+                            <input class='cube-input' id='cube-diagonal' type="number" min='1'>
+
+                            <h4 class='lightblue'> Area: </h4>
+                            <input class='cube-input' id='cube-area' type="number" min='1'>
+
+                            <h4 class='lightblue'> Volumen: </h4>
+                            <input class='cube-input' id='cube-volume' type="number" min='1'>
+
+                            <h4 class='lightblue'> Redondear a: </h4>
+                            <input class='cube-input' id='cube-round' type="number" min='1'>
+                        </div>
+                        <div class='figure-operations-result'>
+                            <h4 class='lightblue'> Lado: </h4>
+                            <h4 id='cube-side-result'> 0 </h4>
+
+                            <h4 class='lightblue'> Diagonal: </h4>
+                            <h4 id='cube-diagonal-result'> 0 </h4>
+
+                            <h4 class='lightblue'> Area: </h4>
+                            <h4 id='cube-area-result'> 0 </h4>
+
+                            <h4 class='lightblue'> Volumen: </h4>
+                            <h4 id='cube-volume-result'> 0 </h4>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Transformacion de Valores -->
 
             <div class='operation-type none' id='operation-type3'>
+                
             </div>
         </div>
         <script src='./javascript/index.js'></script>
@@ -283,5 +418,6 @@
         <script src='./javascript/2d/circle.js'> </script>
 
         <script src='./javascript/3d/cube.js'> </script>
+        <script src='./javascript/3d/parallelepiped.js'> </script>
     </body>
 </html>
