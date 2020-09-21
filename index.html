@@ -25,7 +25,7 @@
                 <div class='link-holder margin-right'>
                     <h2 class='link' id='2d'> Figuras 2D</h2>
 
-                    <h2 class='link' id=3d> Figuras 3D </h2>
+                    <h2 class='link' id='3d'> Figuras 3D </h2>
                 </div>
 
                 <div class='sub-operation-type none' id='sub-operation-type1'>
@@ -318,17 +318,17 @@
 
                         <div class="figure-operations none">
                             <div>
+                                <h4 class='lightblue'> Lado: </h4>
+                                <input class='pyramid-input' id='pyramid-side' type="number" min='1'>
+                                
                                 <h4 class='lightblue'> Base: </h4>
                                 <input class='pyramid-input' id='pyramid-base' type="number" min='1'>
 
                                 <h4 class='lightblue'> Altura: </h4>
                                 <input class='pyramid-input' id='pyramid-height' type="number" min='1'>
 
-                                <h4 class='lightblue'> Profundidad: </h4>
-                                <input class='pyramid-input' id='pyramid-depth' type="number" min='1'>
-
-                                <h4 class='lightblue'> Diagonal: </h4>
-                                <input class='pyramid-input' id='pyramid-diagonal' type="number" min='1'>
+                                <h4 class='lightblue'> Apotema: </h4>
+                                <input class='pyramid-input' id='pyramid-apotem' type="number" min='1'>
 
                                 <h4 class='lightblue'> Area: </h4>
                                 <input class='pyramid-input' id='pyramid-area' type="number" min='1'>
@@ -340,23 +340,71 @@
                                 <input class='pyramid-input' id='pyramid-round' type="number" min='1'>
                             </div>
                             <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Lado: </h4>
+                                <h4 id='pyramid-side-result'> 0 </h4>
+
                                 <h4 class='lightblue'> Base: </h4>
-                                <h4 id='parallelepiped-base-result'> 0 </h4>
+                                <h4 id='pyramid-base-result'> 0 </h4>
 
                                 <h4 class='lightblue'> Altura: </h4>
-                                <h4 id='parallelepiped-height-result'> 0 </h4>
+                                <h4 id='pyramid-height-result'> 0 </h4>
 
-                                <h4 class='lightblue'> Profundidad: </h4>
-                                <h4 id='parallelepiped-depth-result'> 0 </h4>
-
-                                <h4 class='lightblue'> Diagonal: </h4>
-                                <h4 id='parallelepiped-diagonal-result'> 0 </h4>
+                                <h4 class='lightblue'> Apotema: </h4>
+                                <h4 id='pyramid-apotem-result'> 0 </h4>
 
                                 <h4 class='lightblue'> Area: </h4>
-                                <h4 id='parallelepiped-area-result'> 0 </h4>
+                                <h4 id='pyramid-area-result'> 0 </h4>
 
                                 <h4 class='lightblue'> Volumen: </h4>
-                                <h4 id='parallelepiped-volume-result'> 0 </h4>
+                                <h4 id='pyramid-volume-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='cylinder'>
+                        <h3 class='lightblue'> Cilindro </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Lado: </h4>
+                                <input class='cylinder-input' id='cylinder-side' type="number" min='1'>
+                                
+                                <h4 class='lightblue'> Base: </h4>
+                                <input class='cylinder-input' id='cylinder-base' type="number" min='1'>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <input class='cylinder-input' id='cylinder-height' type="number" min='1'>
+
+                                <h4 class='lightblue'> Apotema: </h4>
+                                <input class='cylinder-input' id='cylinder-apotem' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='cylinder-input' id='cylinder-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <input class='cylinder-input' id='cylinder-volume' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='cylinder-input' id='cylinder-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Lado: </h4>
+                                <h4 id='cylinder-side-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Base: </h4>
+                                <h4 id='cylinder-base-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Altura: </h4>
+                                <h4 id='cylinder-height-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Apotema: </h4>
+                                <h4 id='cylinder-apotem-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='cylinder-area-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <h4 id='cylinder-volume-result'> 0 </h4>
                             </div>
                         </div>
                     </div>
@@ -419,5 +467,7 @@
 
         <script src='./javascript/3d/cube.js'> </script>
         <script src='./javascript/3d/parallelepiped.js'> </script>
+        <script src='./javascript/3d/pyramid.js'> </script>
+        <script src='./javascript/3d/cylinder.js'> </script>
     </body>
 </html>

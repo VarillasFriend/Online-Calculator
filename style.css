@@ -105,6 +105,11 @@ h1, h2 {
     display: none;
 }
 
+.clicked {
+    background-color: hsl(205, 70%, 70%);
+    color: hsl(0, 0%, 20%);
+}
+
 .figure-operations div {
     margin-left: auto;
     margin-right: auto;
