@@ -17,7 +17,21 @@
         </nav>
         
         <div id='all'>
-            <h1 class='lightblue'> Calculadora </h1>
+            <div class='header'>
+                <h1 class='lightblue'> Calculadora </h1>
+
+                <div class='special-numbers'>
+                    <div class='special-number-div' id='pi'>
+                        <h2 class='special-number'> π </h2>
+                        <h2 class='special-number-copy'> Copiar </h2>
+                    </div>
+
+                    <div class='special-number-div' id='euler'>
+                        <h2 class='special-number'> e </h2>
+                        <h2 class='special-number-copy'> Copiar </h2>
+                    </div>
+                </div>
+            </div>
 
             <!-- Areas y Volumen -->
 
@@ -327,9 +341,6 @@
                                 <h4 class='lightblue'> Altura: </h4>
                                 <input class='pyramid-input' id='pyramid-height' type="number" min='1'>
 
-                                <h4 class='lightblue'> Apotema: </h4>
-                                <input class='pyramid-input' id='pyramid-apotem' type="number" min='1'>
-
                                 <h4 class='lightblue'> Area: </h4>
                                 <input class='pyramid-input' id='pyramid-area' type="number" min='1'>
 
@@ -366,17 +377,20 @@
 
                         <div class="figure-operations none">
                             <div>
-                                <h4 class='lightblue'> Lado: </h4>
-                                <input class='cylinder-input' id='cylinder-side' type="number" min='1'>
+                                <h4 class='lightblue'> Radio: </h4>
+                                <input class='cylinder-input' id='cylinder-radius' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diametro: </h4>
+                                <input class='cylinder-input' id='cylinder-diameter' type="number" min='1'>
                                 
                                 <h4 class='lightblue'> Base: </h4>
                                 <input class='cylinder-input' id='cylinder-base' type="number" min='1'>
 
+                                <h4 class='lightblue'> Circunferencia: </h4>
+                                <input class='cylinder-input' id='cylinder-circumsference' type="number" min='1'>
+
                                 <h4 class='lightblue'> Altura: </h4>
                                 <input class='cylinder-input' id='cylinder-height' type="number" min='1'>
-
-                                <h4 class='lightblue'> Apotema: </h4>
-                                <input class='cylinder-input' id='cylinder-apotem' type="number" min='1'>
 
                                 <h4 class='lightblue'> Area: </h4>
                                 <input class='cylinder-input' id='cylinder-area' type="number" min='1'>
@@ -388,17 +402,20 @@
                                 <input class='cylinder-input' id='cylinder-round' type="number" min='1'>
                             </div>
                             <div class='figure-operations-result'>
-                                <h4 class='lightblue'> Lado: </h4>
-                                <h4 id='cylinder-side-result'> 0 </h4>
+                                <h4 class='lightblue'> Radio: </h4>
+                                <h4 id='cylinder-radius-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diametro: </h4>
+                                <h4 id='cylinder-diameter-result'> 0 </h4>
 
                                 <h4 class='lightblue'> Base: </h4>
                                 <h4 id='cylinder-base-result'> 0 </h4>
 
+                                <h4 class='lightblue'> Circunferencia: </h4>
+                                <h4 id='cylinder-circumsference-result'> 0 </h4>
+
                                 <h4 class='lightblue'> Altura: </h4>
                                 <h4 id='cylinder-height-result'> 0 </h4>
-
-                                <h4 class='lightblue'> Apotema: </h4>
-                                <h4 id='cylinder-apotem-result'> 0 </h4>
 
                                 <h4 class='lightblue'> Area: </h4>
                                 <h4 id='cylinder-area-result'> 0 </h4>
@@ -408,43 +425,139 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class='figure' id='sphere'>
+                        <h3 class='lightblue'> Esfera </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Radio: </h4>
+                                <input class='sphere-input' id='sphere-radius' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diametro: </h4>
+                                <input class='sphere-input' id='sphere-diameter' type="number" min='1'>
+
+                                <h4 class='lightblue'> Circunferencia: </h4>
+                                <input class='sphere-input' id='sphere-circumsference' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='sphere-input' id='sphere-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <input class='sphere-input' id='sphere-volume' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='sphere-input' id='sphere-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Radio: </h4>
+                                <h4 id='sphere-radius-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diametro: </h4>
+                                <h4 id='sphere-diameter-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Circunferencia: </h4>
+                                <h4 id='sphere-circumsference-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='sphere-area-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <h4 id='sphere-volume-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class='figure' id='cone'>
+                        <h3 class='lightblue'> Cono </h3>
+
+                        <div class="figure-operations none">
+                            <div>
+                                <h4 class='lightblue'> Radio: </h4>
+                                <input class='cone-input' id='cone-radius' type="number" min='1'>
+
+                                <h4 class='lightblue'> Diametro: </h4>
+                                <input class='cone-input' id='cone-diameter' type="number" min='1'>
+
+                                <h4 class='lightblue'> Circunferencia: </h4>
+                                <input class='cone-input' id='cone-circumsference' type="number" min='1'>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <input class='cone-input' id='cone-area' type="number" min='1'>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <input class='cone-input' id='cone-volume' type="number" min='1'>
+
+                                <h4 class='lightblue'> Redondear a: </h4>
+                                <input class='cone-input' id='cone-round' type="number" min='1'>
+                            </div>
+                            <div class='figure-operations-result'>
+                                <h4 class='lightblue'> Radio: </h4>
+                                <h4 id='cone-radius-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Diametro: </h4>
+                                <h4 id='cone-diameter-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Circunferencia: </h4>
+                                <h4 id='cone-circumsference-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Area: </h4>
+                                <h4 id='cone-area-result'> 0 </h4>
+
+                                <h4 class='lightblue'> Volumen: </h4>
+                                <h4 id='cone-volume-result'> 0 </h4>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- Trigonometria -->
 
             <div class='operation-type none' id='operation-type2'>
-                <div class='figure clicked-figure'>
+                <div class='link-holder margin-right'>
+                    <h2 class='link clicked' id='deg'> Grados </h2>
+        
+                    <h2 class='link' id='rad'> Radianes </h2>
+                </div>
+
+                <div class='unclickable-figure'>
                     <h3 class='lightblue'> Trigonometria </h3>
                     <div class="figure-operations">
                         <div>
-                            <h4 class='lightblue'> Lado: </h4>
-                            <input class='cube-input' id='cube-side' type="number" min='1'>
+                            <h4 class='lightblue'> Lado A: </h4>
+                            <input class='trigonom-input' id='trigonom-a' type="number" min='1'>
 
-                            <h4 class='lightblue'> Diagonal: </h4>
-                            <input class='cube-input' id='cube-diagonal' type="number" min='1'>
+                            <h4 class='lightblue'> Lado B: </h4>
+                            <input class='trigonom-input' id='trigonom-b' type="number" min='1'>
 
-                            <h4 class='lightblue'> Area: </h4>
-                            <input class='cube-input' id='cube-area' type="number" min='1'>
+                            <h4 class='lightblue'> Hipotenusa: </h4>
+                            <input class='trigonom-input' id='trigonom-c' type="number" min='1'>
 
-                            <h4 class='lightblue'> Volumen: </h4>
-                            <input class='cube-input' id='cube-volume' type="number" min='1'>
+                            <h4 class='lightblue'> α: </h4>
+                            <input class='trigonom-input' id='trigonom-alfa' type="number" min='1'>
+
+                            <h4 class='lightblue'> β: </h4>
+                            <input class='trigonom-input' id='trigonom-beta' type="number" min='1'>
 
                             <h4 class='lightblue'> Redondear a: </h4>
-                            <input class='cube-input' id='cube-round' type="number" min='1'>
+                            <input class='trigonom-input' id='trigonom-round' type="number" min='1'>
                         </div>
                         <div class='figure-operations-result'>
-                            <h4 class='lightblue'> Lado: </h4>
-                            <h4 id='cube-side-result'> 0 </h4>
+                            <h4 class='lightblue'> Lado A: </h4>
+                            <h4 id='trigonom-a-result'> 0 </h4>
 
-                            <h4 class='lightblue'> Diagonal: </h4>
-                            <h4 id='cube-diagonal-result'> 0 </h4>
+                            <h4 class='lightblue'> Lado B: </h4>
+                            <h4 id='trigonom-b-result'> 0 </h4>
 
-                            <h4 class='lightblue'> Area: </h4>
-                            <h4 id='cube-area-result'> 0 </h4>
+                            <h4 class='lightblue'> Hipotenusa: </h4>
+                            <h4 id='trigonom-c-result'> 0 </h4>
 
-                            <h4 class='lightblue'> Volumen: </h4>
-                            <h4 id='cube-volume-result'> 0 </h4>
+                            <h4 class='lightblue'> α: </h4>
+                            <h4 id='trigonom-alfa-result'> 0 </h4>
+
+                            <h4 class='lightblue'> β: </h4>
+                            <h4 id='trigonom-beta-result'> 0 </h4>
                         </div>
                     </div>
                 </div>
@@ -469,5 +582,11 @@
         <script src='./javascript/3d/parallelepiped.js'> </script>
         <script src='./javascript/3d/pyramid.js'> </script>
         <script src='./javascript/3d/cylinder.js'> </script>
+        <script src='./javascript/3d/sphere.js'> </script>
+
+        <script src='./javascript/trigonometry/trigonometry.js'> </script>
+
+        <input id='pi-value' value='3.14159265358979' style='display: none;'>
+        <input id='e-value' value='2.71828182845905' style='display: none;'>
     </body>
 </html>

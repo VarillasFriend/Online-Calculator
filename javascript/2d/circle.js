@@ -31,25 +31,25 @@ function circle() {
         circleRadiusResult.innerHTML = Math.round(circleRadius * (10 ** circleRound)) / (10 ** circleRound)
 
         circleDiameterResult.innerHTML = Math.round(circleRadius * 2 * (10 ** circleRound)) / (10 ** circleRound)
-        circleCircumResult.innerHTML = Math.round((2 * Math.PI * circleRadius) * (10 ** circleRound)) / (10 ** circleRound)
-        circleAreaResult.innerHTML = Math.round(Math.PI * (circleRadius ** 2) * (10 ** circleRound)) / (10 ** circleRound)
+        circleCircumResult.innerHTML = Math.round((2 * pi * circleRadius) * (10 ** circleRound)) / (10 ** circleRound)
+        circleAreaResult.innerHTML = Math.round(pi * (circleRadius ** 2) * (10 ** circleRound)) / (10 ** circleRound)
     } else if (circleDiameter) {
         circleDiameterResult.innerHTML = Math.round(circleDiameter * (10 ** circleRound)) / (10 ** circleRound)
 
         circleRadiusResult.innerHTML = Math.round(circleDiameter / 2 * (10 ** circleRound)) / (10 ** circleRound)
-        circleCircumResult.innerHTML = Math.round((2 * Math.PI * circleRadiusResult.innerHTML) * (10 ** circleRound)) / (10 ** circleRound)
-        circleAreaResult.innerHTML = Math.round(Math.PI * (circleRadiusResult.innerHTML ** 2) * (10 ** circleRound)) / (10 ** circleRound)
+        circleCircumResult.innerHTML = Math.round((2 * pi * circleRadiusResult.innerHTML) * (10 ** circleRound)) / (10 ** circleRound)
+        circleAreaResult.innerHTML = Math.round(pi * (circleRadiusResult.innerHTML ** 2) * (10 ** circleRound)) / (10 ** circleRound)
     } else if (circleCircum) {
         circleCircumResult.innerHTML = Math.round(circleCircum * (10 ** circleRound)) / (10 ** circleRound)
 
-        circleRadiusResult.innerHTML = Math.round(circleCircum / 2 / Math.PI * (10 ** circleRound)) / (10 ** circleRound)
+        circleRadiusResult.innerHTML = Math.round(circleCircum / 2 / pi * (10 ** circleRound)) / (10 ** circleRound)
         circleDiameterResult.innerHTML = Math.round(circleRadiusResult.innerHTML * 2 * (10 ** circleRound)) / (10 ** circleRound)
-        circleAreaResult.innerHTML = Math.round(Math.PI * (circleRadiusResult.innerHTML ** 2) * (10 ** circleRound)) / (10 ** circleRound)
+        circleAreaResult.innerHTML = Math.round(pi * (circleRadiusResult.innerHTML ** 2) * (10 ** circleRound)) / (10 ** circleRound)
     } else if (circleArea) {
         circleAreaResult.innerHTML = Math.round(circleArea * (10 ** circleRound)) / (10 ** circleRound)
 
-        circleRadiusResult.innerHTML = Math.round((circleArea / Math.PI) ** 0.5 * (10 ** circleRound)) / (10 ** circleRound)
+        circleRadiusResult.innerHTML = Math.round((circleArea / pi) ** 0.5 * (10 ** circleRound)) / (10 ** circleRound)
         circleDiameterResult.innerHTML = Math.round(circleRadiusResult.innerHTML * 2 * (10 ** circleRound)) / (10 ** circleRound)
-        circleCircumResult.innerHTML = Math.round(2 * Math.PI * circleRadiusResult.innerHTML * (10 ** circleRound)) / (10 ** circleRound)
+        circleCircumResult.innerHTML = Math.round(2 * pi * circleRadiusResult.innerHTML * (10 ** circleRound)) / (10 ** circleRound)
     }
 }

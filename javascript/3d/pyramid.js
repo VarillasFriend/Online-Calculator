@@ -2,7 +2,6 @@ let pyramidInputs = document.querySelectorAll('.pyramid-input'),
     pyramidSide = document.getElementById('pyramid-side').value,
     pyramidBase = document.getElementById('pyramid-base').value,
     pyramidHeight = document.getElementById('pyramid-height').value,
-    pyramidApotem = document.getElementById('pyramid-apotem').value,
     pyramidArea = document.getElementById('pyramid-area').value,
     pyramidVolume = document.getElementById('pyramid-volume').value,
     pyramidRound = document.getElementById('pyramid-round').value,
@@ -29,7 +28,6 @@ function pyramid() {
     pyramidSide = document.getElementById('pyramid-side').value
     pyramidBase = document.getElementById('pyramid-base').value
     pyramidHeight = document.getElementById('pyramid-height').value
-    pyramidApotem = document.getElementById('pyramid-apotem').value
     pyramidArea = document.getElementById('pyramid-area').value
     pyramidVolume = document.getElementById('pyramid-volume').value
     pyramidRound = document.getElementById('pyramid-round').value
@@ -40,37 +38,37 @@ function pyramid() {
         pyramidRound = 12
     }
 
-    if (pyramidHeight && pyramidSide && pyramidApotem) {
+    if (pyramidHeight && pyramidSide) {
         side = pyramidSide
         height = pyramidHeight
-        apotem = pyramidApotem
 
+        apotem = (((side / 2) ** 2) + (height ** 2)) ** 0.5
         base = side ** 2
         area = base + side * apotem * 2
         volume = base * height / 3 
-    } else if (pyramidHeight && pyramidApotem && pyramidBase) {
+    } else if (pyramidHeight && pyramidBase) {
         base = pyramidBase
         height = pyramidHeight
-        apotem = pyramidApotem
 
         side = base ** 0.5
+        apotem = ((side / 2) ** 2 + height ** 2) ** 0.5
         area = base + side * apotem * 2
         volume = base * height / 3 
-    } else if (pyramidVolume && pyramidSide && pyramidApotem) {
+    } else if (pyramidVolume && pyramidSide) {
         side = pyramidSide
-        apotem = pyramidApotem
         volume = pyramidVolume
 
         base = side ** 2
         height = volume * 3 / base
+        apotem = ((side / 2) ** 2 + height ** 2) ** 0.5
         area = base + side * apotem * 2
-    } else if (pyramidVolume && pyramidHeight && pyramidApotem) {
+    } else if (pyramidVolume && pyramidHeight) {
         height = pyramidHeight
-        apotem = pyramidApotem
         volume = pyramidVolume
 
         base = volume * 3 / height
         side = base ** 0.5
+        apotem = ((side / 2) ** 2 + height ** 2) ** 0.5
         area = base + side * apotem * 2
     }
 
